@@ -30,7 +30,7 @@ class _QrCodeScannerState extends State<QrCodeScanner> {
 
   Future<void> sendDataToApi(String code) async {
     final response = await http.post(
-      Uri.parse('http://app.cableaereomanizales.gov.co:28011/univiaje/estado_ticket'),
+      Uri.parse('')###############################################,
       headers: {'Content-Type': 'application/json'},
       body: json.encode({'ticket': code}),
     );
